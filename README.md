@@ -6,6 +6,7 @@ Tyler Lewris - tal3fj
 # Team Roles
 Tyler: Data cleaning, parametric approach
 Abhi: Data cleaning, non-parametric approach
+
 James: "open track", reflection questions
 
 # Data Cleaning - abhi, do you want to tackle this?
