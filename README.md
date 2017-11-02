@@ -10,7 +10,8 @@ Abhi: Data cleaning, non-parametric approach
 
 James: "open track", reflection questions
 
-# Data Cleaning - abhi, do you want to tackle this?
+# Data Cleaning
+-abhi, do you want to tackle this?
 
 # Linear Method
 After extensive and thorough data cleaning and exploration, I started the parametric approach by subsetting the data. This was an important step as the full data set has nearly 600,000 observations and 59 variables - far more computationally demanding than my computer can handle. After subsetting the data I ran a linear model with all variables to get a base level model. Then, I utilized R's vif function to identify and remove any insignficant variables that were amplifying the noise of my model. Next, I analyzed plots of variables to try and understand interactions among variables. At this point, after removing five variables that clearly should not belong in my predictive models, I ran a logisitic regression on the entire dataset with the remaining variables. I then chose only the variables that had p-values < 0.05 and created a new model. From there, I further analyzed this new model and removed two variables that had many factor levels that were not signficant at the 0.05 level. 
