@@ -7,6 +7,7 @@ Tyler Lewris - tal3fj
 
 # Best Kaggle Scores
 Linear Model (Parametric Approach): 0.166
+
 RandomForest (Non-Parametric Approach): 
 
 # Team Roles
