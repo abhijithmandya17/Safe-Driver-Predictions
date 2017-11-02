@@ -1,4 +1,4 @@
-#SYS 6018 Competition 4 team 2
+# SYS 6018 Competition 4 team 2
 NOTE: Our name on Kaggle is "Competition 4 team 2" - we let Professor Gerber know and he told us this was ok
 
 Tyler Lewris - tal3fj
