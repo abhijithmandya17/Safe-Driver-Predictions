@@ -11,6 +11,8 @@ Linear Model (Parametric Approach): 0.166
 
 RandomForest (Non-Parametric Approach): 0.245
 
+Gradient Boost (Open Track): 0.245
+
 # Team Roles
 Tyler: Data cleaning and Transformations, parametric approach
 
@@ -27,6 +29,9 @@ At this point, I have identified a list of variables that are all significant at
 
 # Non Linear Method (Random Forest)
 The choice of random forest was mandatory for grading in this competition. After specific data cleaning for random forest mentioned above, a subset of data was chosen (n = 100,000) from the train data set to tune the hyper parameters of the model like m, number of trees and sampling size. To cross validate these values, we chose to parallelize our runs using the foreach package that let us run multiple forests at the same time. Based on the outcomes, we decided to use m = 3 and 1000 trees. Another unique situation with this dataset was imbalance in the response variable. One class dominated the other roughly in the proportion of 24:1. Random forest classifiers do really poorly with such imbalance since predictions are based on majority vote. To combat this, we downsampled our data to balance it. We kept all the minority class observations (n = 3615, 21694 in the subset and train data respectively) while randomly selecting an equal amount of majority class observations. This model was then validated on held out train data using the Gini function producing a highly overextimated score of 0.394. This model was then used to run on the whole train data and make predictions generating a kaggle score of 0.245.  
+
+# Open Track (Gradient Boost)
+Gradient Boost was attempted using the caret package on cleaned data. The caret package allows the model to be cross validated internally. We chose a value of 5 to save computational memory. Model was first trained on a subset of 100,000 downsampled observations and then finally on the complete downsampled data set. Normalized Gini scores predicted 0.289 while Kaggle gave out a score of 0.245, same as the random forest. This suggests that for any further improvement, further feature engineering and or feature selection is necessary.   
 
 # Reflection Questions: 
 Who might care about this problem and why?
