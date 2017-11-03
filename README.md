@@ -2,6 +2,7 @@
 NOTE: Our name on Kaggle is "Competition 4 team 2" - we let Professor Gerber know and he told us this was ok
 
 Tyler Lewris - tal3fj
+Abhijith Mandya - am6ku
 
 
 
@@ -11,14 +12,14 @@ Linear Model (Parametric Approach): 0.166
 RandomForest (Non-Parametric Approach): 
 
 # Team Roles
-Tyler: Data cleaning, parametric approach
+Tyler: Data cleaning and Transformations, parametric approach
 
-Abhi: Data cleaning, non-parametric approach
+Abhijith: Data cleaning and Transformations, non-parametric approach
 
 James: "open track", reflection questions
 
 # Data Cleaning
--abhi, do you want to tackle this?
+This data set was previously engineered  by Kaggle before opening it up for the competition. All, unknown or missing values were codified as -1. This helped us asses missing values easily and move forward with very few hiccups. Train and test data were first merged to perform all cleaning and transformations in a unified fashion. We dropped the columns which had more than 50% unknown values. Further, we correctly classified the categorical and numerical columns so that we could impute the mode and mean respectively for them. We then reset the levels to reflect the true distribution within the columns. For the Random forest, we took a few more steps where we reversed the one hot encoded columns to reduce the dimensionality of the data set and dropped a single column which had over 100 levels.   
 
 # Linear Method
 After extensive and thorough data cleaning and exploration, I started the parametric approach by subsetting the data. This was an important step as the full data set has nearly 600,000 observations and 59 variables - far more computationally demanding than my computer can handle. After subsetting the data I ran a linear model with all variables to get a base level model. Then, I utilized R's vif function to identify and remove any insignficant variables that were amplifying the noise of my model. Next, I analyzed plots of variables to try and understand interactions among variables. At this point, after removing five variables that clearly should not belong in my predictive models, I ran a logisitic regression on the entire dataset with the remaining variables. I then chose only the variables that had p-values < 0.05 and created a new model. From there, I further analyzed this new model and removed two variables that had many factor levels that were not signficant at the 0.05 level. 
