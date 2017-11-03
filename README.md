@@ -3,7 +3,7 @@ NOTE: Our name on Kaggle is "Competition 4 team 2" - we let Professor Gerber kno
 
 Tyler Lewris - tal3fj
 Abhijith Mandya - am6ku
-
+James Xie - jx4cc
 
 
 # Best Kaggle Scores
