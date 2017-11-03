@@ -14,9 +14,9 @@ RandomForest (Non-Parametric Approach): 0.245
 # Team Roles
 Tyler: Data cleaning and Transformations, parametric approach
 
-Abhijith: Data cleaning and Transformations, non-parametric approach
+Abhijith: Data cleaning and Transformations, non-parametric approach, Reflection questions
 
-James: "open track", reflection questions
+James: "open track", Reflection questions
 
 # Data Cleaning and Exploration
 This data set was previously engineered  by Kaggle before opening it up for the competition. All, unknown or missing values were codified as -1. This helped us asses missing values easily and move forward with very few hiccups. Train and test data were first merged to perform all cleaning and transformations in a unified fashion. We dropped the columns which had more than 50% unknown values. Further, we correctly classified the categorical and numerical columns so that we could impute the mode and mean respectively for them. We then reset the levels to reflect the true distribution within the columns. For the Random forest, we took a few more steps where we reversed the one hot encoded columns to reduce the dimensionality of the data set and dropped a single column which had over 100 levels.   
