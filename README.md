@@ -16,7 +16,7 @@ Gradient Boost (Open Track): 0.245
 # Team Roles
 Tyler: Data cleaning and Transformations, parametric approach
 
-Abhijith: Data cleaning and Transformations, non-parametric approach, Reflection questions
+Abhijith: Data cleaning and Transformations, non-parametric approach, open track, Reflection questions
 
 James: "open track", Reflection questions
 
