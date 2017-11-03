@@ -67,6 +67,7 @@ which(col_levels>53) #ps_car_11_cat
 #Drop column from all data
 all_data <- within(all_data, rm(ps_car_11_cat))
 
+
 #Resplitting the data back into train and test
 train <- all_data[1:595212,]
 test <- all_data[595213:1488028,]
@@ -100,7 +101,7 @@ rm(train1, test1, all_data)
 
 #Subset of 10,000 observations
 set.seed(1)
-train_index <- sample(1:nrow(train), 10000, replace= FALSE)
+train_index <- sample(1:nrow(train), 100000, replace= FALSE)
 train_subset <- train[train_index,]
 
 #Create data sets for random forest
@@ -110,7 +111,7 @@ Y.train = as.factor(train_subset[, 1])
 summary(Y.train)[2]/(summary(Y.train)[1]+summary(Y.train)[2])*100
 
 #Create test set for cross validation using gini scores
-test_index <- sample(1:nrow(train), 10000, replace= FALSE)
+test_index <- sample(1:nrow(train), 100000, replace= FALSE)
 test_subset <- train[test_index,]
 X.test = test_subset[, -c(1,2)]
 Y.test = as.factor(test_subset[, 1])
@@ -133,10 +134,10 @@ set.seed(12)
 
 #Test with Gini score 
 rf_cv <- randomForest(X.train, as.factor(Y.train), mtry = 3, ntree = 1000,
-                                            sampsize = c(334, 334))
+                                            sampsize = c(3615, 3615))
 pred_cv <- predict(rf_cv, X.test, type = "prob")
  
-preds <- pred_cv[,2]
+preds <- pred_cv[,1]
 normalized.gini.index(as.numeric(Y.test), pred_cv[,2])
 
 #based on the cross validation, the best classification was produced using 1000 trees and mtry of 3
@@ -155,3 +156,4 @@ pred <- predict(rf_final, test, type = "prob")
 prediction <- data.frame(test$id,pred[,2])
 colnames(prediction) = c("id", "target")
 write.csv(prediction, file = "randomforest.csv", row.names = FALSE)
+
