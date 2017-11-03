@@ -2,7 +2,9 @@
 NOTE: Our name on Kaggle is "Competition 4 team 2" - we let Professor Gerber know and he told us this was ok
 
 Tyler Lewris - tal3fj
+
 Abhijith Mandya - am6ku
+
 James Xie - jx4cc
 
 
@@ -40,11 +42,11 @@ Large transportation companies like Uber and Lyft benefit directly from solving 
 
 Accurately identifying safe/unsafe drivers directly affects car insurance companies. Charging higher premiums to drivers with lower safety scores can improve the return on investment. Furthermore, charging a lower premium for safe drivers attracts more of those individuals and can have a positive effect on brand perception. Thus, from a business standpoint, it is in the best interest for such companies to provide the most accurate and reliable claim predictions.
 
-Why might this problem be challenging?
+## Why might this problem be challenging?
 
 Safety scores can depend on a multitude of predictors, most of which cannot be collected or codified for use in statistical learning. Data collection, as seen in this data, is extremely cumbersome and a huge percentage of the data was missing, rendering those predictors useless. Dealing with big data, in general, can be very time consuming. To add to the complications, our data includes mixed data types which tend to increase the model complexity. Furthermore, safety usually isn't linearly dependent on a set of variables; thus we end up using high end learning algorithms to improve predictions reducing interpretibility. 
 
-What other problems resemble this problem?
+## What other problems resemble this problem?
 
 Credit score predictions, human behavior predictions like brand preference, ad click through are all similar examples which rely on predicting human behavior in a multitude of ways. 
 
