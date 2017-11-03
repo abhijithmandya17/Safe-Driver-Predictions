@@ -31,13 +31,14 @@ The choice of random forest was mandatory for grading in this competition. After
 # Reflection Questions: 
 Who might care about this problem and why?
 
-Large transportation companies like Uber and Lyft benefit directly from solving such problems. Predicitng safety scores of their drivers can in turn help them remodel their pricing and compensations to the drivers. Further, they can implement training systems for those with lower scores to improve thier services. 
+Large transportation companies like Uber and Lyft benefit directly from solving such problems. Predicting safety scores of their drivers can in turn help them remodel their pricing and compensations to the drivers. Furthermore, they can implement training systems for those with lower scores to improve thier services. 
 
-Inaccuracies in a car insurance company’s claim predictions most directly concerns drivers. Charging higer premiums to drivers with lower saftery scores can improve the return on investment for insurance companies. Thus, from a business standpoint, it is in the best interest for such type of companies to provide the most accurate and reliable claim predictions.
+Inaccuracies in a car insurance company’s claim predictions most directly concerns drivers. Charging higher premiums to drivers with lower safety scores can improve the return on investment for insurance companies. Thus, from a business standpoint, it is in the best interest for such types of companies to provide the most accurate and reliable claim predictions.
 
 Why might this problem be challenging?
 
-Saftey scores can depend on a multitude of predicitors most of which cannot be collected or codified for use in statistical learning. Data collection, as seen in this data is extremely cumbersome and a huge percentage of the data was missing rendering those predictors, useless. Dealing with big data, in general, can be very time consuming. To add to the complications, our data includes mixed data types which tend to increase the model complexity. Further, saftey usually isn't linearly dependent on a set of variables, thus we end up using high end learning algorithms to improve predictions reducing interpretibility. 
+Safety scores can depend on a multitude of predictors, most of which cannot be collected or codified for use in statistical learning. Data collection, as seen in this data, is extremely cumbersome and a huge percentage of the data was missing, rendering those predictors useless. Dealing with big data, in general, can be very time consuming. To add to the complications, our data includes mixed data types which tend to increase the model complexity. Furthermore, safety usually isn't linearly dependent on a set of variables; thus we end up using high end learning algorithms to improve predictions reducing interpretibility. 
 
-"What other problems resemble this problem?
-Credit score predictions, Human behavior predicttions like brand preference, ad click through are all similar examples which rely on predicting human behavior in a multitude of ways.
+What other problems resemble this problem?
+
+Credit score predictions, human behavior predictions like brand preference, ad click through are all similar examples which rely on predicting human behavior in a multitude of ways.
